@@ -20,7 +20,7 @@ app.use(cookieParser());
 app.use(cors({ origin: allowedOrigins, credentials: true }));
 
 app.get("/", (req, res) => {
-  res.send("<h1>Hello World</h1>");
+  res.send("<h1>API WORKING</h1>");
 });
 
 app.use("/api/auth", authRouter);
